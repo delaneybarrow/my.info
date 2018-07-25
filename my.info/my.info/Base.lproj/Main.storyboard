@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
+        <array key="GillSans.ttc">
+            <string>GillSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="my_info" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Office" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2e-ps-YLF">
+                                <rect key="frame" x="42" y="90.5" width="291" height="72"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="62"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U.S." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlP-kL-i6v">
+                                <rect key="frame" x="130.5" y="170" width="114" height="72"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="62"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="NGC-d4-RiW">
+                                <rect key="frame" x="26" y="250" width="322" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="eCh-Rr-9fK"/>
+                                    <constraint firstAttribute="width" constant="322" id="rxl-nm-5Hp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2j-RU-iYC">
+                                <rect key="frame" x="296" y="591" width="63" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow_right-512"/>
+                                <connections>
+                                    <segue destination="KS4-e6-JLi" kind="show" id="8aw-sU-Wwt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who's Who" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfy-Lu-xQ5">
+                                <rect key="frame" x="57" y="443" width="261" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="GuT-LZ-OR0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="261" id="tqB-Xl-rMD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47645663207513839" blue="0.59571324481865284" alpha="0.81035431338028174" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="LlP-kL-i6v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-127.5" id="6su-nn-Reb"/>
+                            <constraint firstItem="LlP-kL-i6v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JNi-p7-5Ka"/>
+                            <constraint firstItem="NGC-d4-RiW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="9" id="VpJ-j8-yPR"/>
+                            <constraint firstItem="NGC-d4-RiW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W9d-bf-OAO"/>
+                            <constraint firstItem="t2e-ps-YLF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXn-4L-GHM"/>
+                            <constraint firstItem="NGC-d4-RiW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bln-qN-gbu"/>
+                            <constraint firstItem="t2e-ps-YLF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcL-IF-8Jp"/>
+                            <constraint firstItem="t2e-ps-YLF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-207" id="hCr-Po-JPM"/>
+                            <constraint firstItem="qfy-Lu-xQ5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="138" id="qcs-p3-UJr"/>
+                            <constraint firstItem="qfy-Lu-xQ5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zEO-Kh-yZp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5nw-7M-xMs">
+            <objects>
+                <viewController id="KS4-e6-JLi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ESS-UR-Vpw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MichaelScott" translatesAutoresizingMaskIntoConstraints="NO" id="Jmq-gd-xKJ">
+                                <rect key="frame" x="16" y="41" width="182" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="cV2-Og-XaG"/>
+                                    <constraint firstAttribute="width" constant="182" id="dbK-1Q-jA8"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AaY-3i-r2O">
+                                <rect key="frame" x="16" y="276" width="343" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.79373636739999998" green="0.87181365789999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">Michael G. Scott is the regional manager of the Dunder Mifflin Paper Company Scranton Branch. He owns a George Forman Grill although a bacon incident caused him to burn his foot on the grill. Michael often causes problems in his office due to his childish behavior despite being an excellent salesman.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Michael " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNX-MT-8Un">
+                                <rect key="frame" x="208" y="68" width="151" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scott" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03E-3B-fD0">
+                                <rect key="frame" x="229" y="122" width="108" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leq-3j-h95">
+                                <rect key="frame" x="16" y="595" width="63" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Nh9-5t-kE0"/>
+                                    <constraint firstAttribute="width" constant="63" id="fsL-Hy-jBN"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="arrow left"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="e3y-dg-Kc1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrz-U4-Am6">
+                                <rect key="frame" x="296" y="595" width="63" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow_right-512"/>
+                                <connections>
+                                    <segue destination="p3z-r9-Gat" kind="show" id="Ysh-mF-Web"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79373636740324982" green="0.87181365793960963" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Leq-3j-h95" firstAttribute="top" secondItem="SF2-4J-n4o" secondAttribute="top" constant="575" id="FYI-MR-O4c"/>
+                            <constraint firstItem="Jmq-gd-xKJ" firstAttribute="centerX" secondItem="SF2-4J-n4o" secondAttribute="centerX" constant="-80.5" id="Hcr-xE-6HU"/>
+                            <constraint firstItem="Leq-3j-h95" firstAttribute="centerX" secondItem="ESS-UR-Vpw" secondAttribute="centerX" constant="-140" id="Qng-MZ-rPF"/>
+                            <constraint firstItem="SF2-4J-n4o" firstAttribute="bottom" secondItem="Leq-3j-h95" secondAttribute="bottom" constant="9" id="UjD-cE-z7I"/>
+                            <constraint firstItem="Leq-3j-h95" firstAttribute="centerY" secondItem="ESS-UR-Vpw" secondAttribute="centerY" constant="293" id="h8j-bS-vOo"/>
+                            <constraint firstItem="Jmq-gd-xKJ" firstAttribute="centerY" secondItem="SF2-4J-n4o" secondAttribute="centerY" constant="-201.5" id="vIC-83-Xae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SF2-4J-n4o"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3v-nE-aun" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.60000000000002" y="115.59220389805098"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a8h-gW-CU2">
+            <objects>
+                <viewController id="p3z-r9-Gat" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bsx-Sn-sJu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dwight schrute" translatesAutoresizingMaskIntoConstraints="NO" id="icx-3L-88R">
+                                <rect key="frame" x="16" y="33" width="173" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" text="Dwight  Schrute" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gRO-k6-3QC">
+                                <rect key="frame" x="197" y="53" width="162" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81842285049999997" green="1" blue="0.64143076529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="44"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4ev-Re-vFd">
+                                <rect key="frame" x="16" y="240" width="343" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81842285049999997" green="1" blue="0.64143076529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">Dwight Kurt Schrute is a salesman and the assistant to the regional manager at the Dunder Mifflin Scranton Branch. Other than working for a paper company he owns his own beet farm which has been in his family for years. He lives on his farm with his cousin Mose. He is also a volunteer sherrif deputy and later becomes the owner of the buildingwhere he works. In Season 9 Dwight ends up marrying Angela, an accountant in the office, and they have one child together. dwight is Michael's right hand man and is very loyal. He and Jim, another salesman, had a longtime feud with each other but in the end Dwight asks Jim to be his best amn at his wedding.  </mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsK-Ch-Jf0">
+                                <rect key="frame" x="16" y="596" width="63" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow left"/>
+                                <connections>
+                                    <segue destination="KS4-e6-JLi" kind="show" id="bsp-Er-Jw9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7m-qf-5Aj">
+                                <rect key="frame" x="296" y="596" width="63" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow_right-512"/>
+                                <connections>
+                                    <segue destination="u0Q-z3-cgV" kind="show" id="YRa-TR-ui6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81842285046139462" green="1" blue="0.64143076527751997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="3fk-Ii-VYK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kkp-xC-fUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1429.5999999999999" y="116.49175412293854"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Vv-ZA-rkr">
+            <objects>
+                <viewController id="u0Q-z3-cgV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A45-Cc-0WM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jim halpert" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-XP-1kz">
+                                <rect key="frame" x="31" y="40" width="155" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xge-YW-7CI">
+                                <rect key="frame" x="10" y="595" width="63" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow left"/>
+                                <connections>
+                                    <segue destination="p3z-r9-Gat" kind="show" id="wWK-P6-Pd2"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Jim Halpert" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WSg-6z-EAX">
+                                <rect key="frame" x="194" y="58" width="175" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.86159215680000001" blue="0.57409591000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="44"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Pd-jK-38M">
+                                <rect key="frame" x="16" y="241" width="343" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.86159215680000001" blue="0.57409591000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">Jim Halpert is another salesman for Dunder Mifflin Scranton. He is the most level-headed in the office but he loves to prank Dwight. From putting his stapler in Jello to dressing up as Dwight, he never ceases to upset Dwight. In the first few seasons Jim has a mad crush on his bestfriend and receprionist Pam, however she was engaged to one of the warehouse workers, Roy. Jim later confesses his feelings in Season 3 before moving to a different branch when he is rejected. However, Pam cancels the wedding and breaks up with Roy to late be with Jim when the two branches merge. They marry and have 2 kids.</mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.86159215684106916" blue="0.57409590996997406" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="AHG-xQ-bik"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2K-1q-EWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2120.8000000000002" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MichaelScott" width="240" height="272"/>
+        <image name="arrow left" width="512" height="512"/>
+        <image name="arrow_right-512" width="512" height="512"/>
+        <image name="dwight schrute" width="400" height="400"/>
+        <image name="images" width="300" height="168"/>
+        <image name="jim halpert" width="225" height="225"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ysh-mF-Web"/>
+        <segue reference="bsp-Er-Jw9"/>
+    </inferredMetricsTieBreakers>
+</document>
